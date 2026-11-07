@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    padding: 25px;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+/* Membuat 3 kolom */
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Kotak materi */
+section div {
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Judul materi */
+section h2 {
+    color: #1b5e20;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+/* Gambar */
+section img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Tombol lihat text */
+.tombol {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.tombol:hover {
+    background-color: #1b5e20;
+}
+
+/* Isi text */
+details p {
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+blockquote {
+    background-color: #e8f5e9;
+    border-left: 4px solid #43a047;
+    padding: 10px;
+    margin: 8px 0;
+    text-align: justify;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 40px auto 20px;
+}
+
+.btn-kembali {
+    display: inline-block;
+    background-color: #43a047;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #2e7d32;
+}

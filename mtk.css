@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eaf3e6;
+    color: #263d2b;
+}
+
+
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #82b889, #a3d1a2);
+    padding: 35px 20px;
+    border-radius: 0 0 20px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 38px;
+    color: #315b38;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+section {
+    width: 90%;
+    max-width: 1350px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+
+section > div {
+    background: #c5dfc6;
+    padding: 25px 20px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(50, 90, 50, 0.10);
+    transition: 0.3s ease;
+}
+
+section > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 18px rgba(50, 90, 50, 0.18);
+}
+
+
+section h2 {
+    font-size: 23px;
+    color: #315b38;
+    margin-bottom: 22px;
+    line-height: 1.4;
+}
+
+
+section img {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+
+details {
+    background-color: #edf5e9;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #47794c;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+}
+
+summary:hover {
+    color: #244d2b;
+}
+
+details h3 {
+    color: #47794c;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+details p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #354a38;
+    margin-bottom: 12px;
+    overflow-wrap: break-word;
+}
+
+
+@media (max-width: 900px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+        width: 94%;
+        gap: 18px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navbar h1 {
+        font-size: 30px;
+    }
+
+    header {
+        padding: 28px 15px;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 25px auto;
+        gap: 20px;
+    }
+
+    section > div {
+        padding: 20px 15px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    section img {
+        max-width: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 40px auto 20px;
+}
+
+.btn-kembali {
+    display: inline-block;
+    background-color: #43a047;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #2e7d32;
+}

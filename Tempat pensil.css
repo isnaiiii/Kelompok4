@@ -1,0 +1,143 @@
+/* produk.css - dipakai semua halaman produk (gaya EcoCycle) */
+
+body {
+    margin: 0;
+    padding: 0 0 30px;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.7;
+    color: #1a2e1a;
+    background-color: #cce8c8;
+}
+
+/* Header */
+header {
+    background-color: #1b3d0f;
+    padding: 18px 16px;
+    border-bottom: 2px solid #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+    color: #d9a520;
+    text-align: center;
+}
+
+/* Gambar di tengah */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 15px;
+    border: 5px solid #8DBB91;
+}
+
+/* Judul bagian: Ulasan, Alat, Bahan, Langkah Kerja, Estimasi Biaya */
+h3 {
+    max-width: 800px;
+    margin: 24px auto 10px;
+    padding: 8px 16px;
+    font-size: 1.15rem;
+    color: #1f5a14;
+    background-color: #8DBB91;
+    border-left: 6px solid #1b3d0f;
+}
+
+/* Sub judul Alat / Bahan di Estimasi Biaya */
+h4 {
+    max-width: 800px;
+    margin: 16px auto 6px;
+    padding: 0 16px;
+    color: #1f5a14;
+}
+
+/* Paragraf ulasan */
+p {
+    max-width: 800px;
+    margin: 0 auto 14px;
+    padding: 0 16px;
+    text-align: justify;
+}
+
+/* Daftar */
+ol {
+    max-width: 800px;
+    margin: 0 auto 14px;
+    padding: 0 16px 0 44px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Alat dan Bahan berdampingan */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 0 16px;
+}
+
+.container section,
+.container aside {
+    background-color: #8DBB91;
+    border-radius: 24px;
+    padding: 12px 16px 16px;
+}
+
+.container h3 {
+    margin: 0 0 8px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: #1f5a14;
+}
+
+.container ol {
+    margin: 0;
+    padding: 0 0 0 24px;
+    color: #1a2e1a;
+}
+
+/* Kotak hasil biaya */
+.hasil-biaya {
+    max-width: 800px;
+    margin: 20px auto 0;
+    padding: 14px 16px;
+    background-color: #eef8ea;
+    border-left: 6px solid #1b3d0f;
+    border-radius: 0 16px 16px 0;
+}
+
+.hasil-biaya p {
+    margin: 4px 0;
+    padding: 0;
+}
+footer {
+    text-align: center;
+    margin: 40px auto 20px;
+}
+
+.btn-kembali {
+    display: inline-block;
+    background-color: #43a047;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #2e7d32;
+}

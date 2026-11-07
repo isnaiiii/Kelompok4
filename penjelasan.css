@@ -1,0 +1,127 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edf4df;
+    color: #344b38;
+    line-height: 1.8;
+    padding-bottom: 40px;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #8fc78b, #a9d5a1);
+    color: #24452c;
+    padding: 30px 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px rgba(60, 100, 60, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* JUDUL */
+h3 {
+    color: #386b42;
+    background-color: #d4e8c9;
+    margin: 25px 5% 15px;
+    padding: 12px 20px;
+    border-left: 6px solid #76ad72;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+/* PARAGRAF */
+p {
+    background-color: #ffffff;
+    margin: 0 5%;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: justify;
+    color: #405344;
+    box-shadow: 0 3px 10px rgba(70, 110, 70, 0.08);
+    font-size: 16px;
+}
+
+/* DAFTAR 3R */
+ol, ul {
+    background-color: #dcebd4;
+    margin: 15px 5%;
+    padding: 20px 45px;
+    border-radius: 15px;
+    color: #3b5740;
+    box-shadow: 0 3px 8px rgba(70, 110, 70, 0.08);
+}
+
+li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* PENEKANAN TEKS */
+i {
+    color: #43834c;
+    font-weight: bold;
+}
+
+
+ 
+    header {
+        padding: 25px 10px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 17px;
+        margin: 20px 4% 12px;
+    }
+
+    p {
+        margin: 0 4%;
+        padding: 18px;
+        font-size: 14px;
+    }
+
+    ol, ul {
+        margin: 15px 4%;
+        padding: 18px 35px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    footer {
+    text-align: center;
+    margin: 40px auto 20px;
+}
+
+.btn-kembali {
+    display: inline-block;
+    background-color: #43a047;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-kembali:hover {
+    background-color: #2e7d32;
+}
